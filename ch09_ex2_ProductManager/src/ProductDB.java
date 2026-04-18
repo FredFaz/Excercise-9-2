@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.ArrayList;
 
 public class ProductDB {
-    private static final String FILENAME = "products.txt";
+    private static final String FILENAME = "productsX.txt";
     private static final String COLUMN_SEP = "\t";
     
     public static ArrayList<Product> getAll() {

@@ -9,6 +9,11 @@ public class ProductManagerApp {
         // read list of products from file
         var products = ProductDB.getAll();
 
+        if (products == null) {
+    System.out.println("Error: The products.txt file could not be found.");
+    return;
+}
+
         String action = "";
         while (!action.equalsIgnoreCase("exit")) {
             action = Console.getString("Enter a command: ");
